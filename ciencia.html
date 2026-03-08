@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Python Developer - Portafolio</title>
+  <link rel="stylesheet" href="css/s_all.css">
+  <style>
+    .proyecto {
+  max-width: 100%;        /* que nunca exceda el ancho de la pantalla */
+  margin: auto;           /* centra el bloque */
+  padding: 1rem;          /* espacio interno */
+  display: flex;          /* permite centrar contenido */
+  justify-content: center;
+  align-items: center;
+}
+
+.proyecto .slide {
+  width: 100%;            /* ocupa todo el ancho disponible */
+  max-width: 900px;       /* límite para pantallas grandes */
+}
+
+.proyecto .slide img {
+  width: 100%;            /* imagen se ajusta al ancho del contenedor */
+  height: auto;           /* mantiene proporción */
+  object-fit: contain;    /* evita deformaciones */
+  border-radius: 8px;     /* opcional: esquinas redondeadas */
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 600px) {
+  .proyecto {
+    padding: 0.5rem;
+  }
+
+  .proyecto .slide img {
+    border-radius: 4px;
+  }
+}
+.proyecto .slide img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease; /* animación suave */
+  cursor: zoom-in;                /* cambia el cursor */
+}
+
+.proyecto .slide img:hover {
+  transform: scale(1.2);          /* zoom al pasar el mouse */
+}
+.ul {
+  list-style-position: inside; /* mantiene las viñetas dentro del bloque */
+  text-align: left;            /* asegura que el texto quede alineado a la izquierda */
+  margin-left: 1rem;           /* espacio desde el borde izquierdo */
+  padding-left: 0;             /* elimina padding extra */
+}
+
+.li {
+  text-align: left;            /* cada ítem alineado a la izquierda */
+  margin-bottom: 0.5rem;       /* espacio entre ítems */
+}
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>📱 Ciencia de datos</h1>
+    <p>Ciclo de vida de las ciencias de datos</p>
+  </header>
+
+  <section>
+    <h2>Infografía</h2>
+    <div class="proyecto">
+      <div class="slide">
+        <img src="img/ciclo_de_vida_ciencias_de_datos.png" alt="ciencia">
+      </div>
+    </div>    
+    <ul>
+      <a href="img/ciclo_de_vida_ciencias_de_datos.png" target="_blank"> Ver imagen completa</a>
+    </ul>   
+  </section>
+ 
+  <section>
+  <h2>Ciencia de Datos en las Empresas</h2>
+  <div class="proyecto">
+    <p>
+      Según mi criterio para las compañías este enfoque integral no solo asegura calidad y confiabilidad en el análisis, 
+      sino que también convierte la información en un recurso valioso para innovar, optimizar procesos y generar ventajas 
+      competitivas sostenibles. 
+     <br>
+     <br>
+      El ciclo de vida de la ciencia de datos debe considerarse en todas las empresas porque 
+      garantiza un proceso estructurado para transformar datos en decisiones estratégicas: comienza con entender el negocio 
+      y recopilar información relevante, continúa con la mejora, limpieza y exploración de los datos, y culmina en la creación 
+      de modelos predictivos y la narración clara de resultados.
+     <br>
+     <br>
+      El ciclo de vida de la ciencia de datos no es lineal. Las respuestas obtenidas en la fase final
+      generan nuevas preguntas de negocio, reiniciando el sistema de ingeniería para una mejora continua.
+    </p>
+  </div>
+</section>
+
+
+<div class="proyecto">
+  <embed src="artefactos/Data_Science_Blueprint.pdf" type="application/pdf" width="100%" height="600px" />
+</div>
+
+  <div class="volver">
+    <a href="index.html">⬅ Volver al inicio</a>
+  </div>
+
+  <section id="contacto">
+    <h2>📩Contacto</h2>
+    <p>🔗 Correo: <a href="mailto:ing.dev.alex@gmail.com">ing.dev.alex@gmail.com</a></p>
+    <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/ing-alex-ortiz/" target="_blank">Ing-alex-ortiz/</a></p>
+  </section>
+
+  <footer>
+    <p>© 2026 Alex Ortiz - Portafolio</p>
+  </footer>
+</body>
+</html>
