@@ -5,6 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alex Ortiz - Portafolio</title>
   <link rel="stylesheet" href="css/s_all.css">
+  <style>
+.project-img {
+    max-width: 100%;  /* Impide que la imagen sea más ancha que su contenedor */
+    height: auto;     /* Mantiene la proporción original de la imagen sin deformarla */
+    display: block;   /* Elimina espacios vacíos extraños que a veces deja el texto abajo */
+    margin: 1.5rem auto; /* Centra la imagen y le da un margen limpio arriba y abajo */
+    border-radius: 8px;  /* (Opcional) Un toque estético para suavizar las esquinas */
+}
+  </style>
 </head>
 <body>
   <header>
@@ -14,20 +23,42 @@
 
   <section>
     <h2>Proyectos</h2>
-
     
-    <!--
-
     <div class="proyecto">
-      <p><strong>2️⃣ Proyecto 2</strong></p>
-      <p><strong>Título:</strong> [...]</p>
-      <p><strong>Contexto:</strong> [...]</p>
-      <p><strong>Stack tecnológico:</strong> [...]</p>
-      <p><strong>Solución:</strong> [...]</p>
-      <p><strong>Ejemplo:</strong> [...]</p>
-      <p><strong>Impacto:</strong> [...]</p>
-    </div>
+      <p><strong>Proyecto 1</strong></p>
+      <p><strong>Título:</strong> Plantilla Flask v2</p>
+      <p><strong>Contexto:</strong> Se requería diseñar una arquitectura base ligera y modular 
+        en el backend utilizando Flask para el despliegue rápido de herramientas de automatización, 
+        scripts de control y tableros de datos (dashboards). El principal desafío era construir 
+        una interfaz de usuario avanzada, responsiva y altamente personalizable (UX) 
+        sin la necesidad de sobrecargar el proyecto implementando frameworks pesados o complejos 
+        de JavaScript en el frontend.</p>
+      <p><strong>Stack tecnológico:</strong> [Python (Flask), JavaScript, CSS3, HTML5]</p>
+      <p><strong>Solución:</strong> Se desarrolló un entorno desacoplado donde Flask gestiona las 
+        rutas y la lógica modular de manera limpia. Para la interfaz, se implementó un sistema de 
+        inyección dinámica de variables de tema desde JavaScript, manipulando las propiedades raíz 
+        (:root) del CSS en tiempo real para permitir el cambio de paletas de colores de forma fluida 
+        y persistente.</p>
+      <p><strong>Ejemplo:</strong> El sistema permite al usuario alternar entre múltiples temas visuales 
+        con un solo clic, logrando que toda la interfaz mute y mantenga la persistencia cromática de 
+        forma inmediata. Al interactuar con los botones de la cuadrícula de acciones ("Inicio", "Explorar", 
+        "Configurar", "Contacto"), se dispara un evento en JavaScript que añade la 
+        clase activa al botón presionado y traslada dinámicamente el foco del color al contenedor del footer]</p>
+      <p><strong>Impacto:</strong> Se logró una reducción drástica en el tiempo de configuración inicial 
+        para nuevos desarrollos web o paneles de automatización. Al eliminar frameworks de frontend 
+        comerciales, se obtuvo un cascarón con un rendimiento de carga óptimo, código limpio, mantenible 
+        y una arquitectura base reutilizable que permite a otros desarrolladores e ingenieros de datos 
+        integrar endpoints de backend en cuestión de minutos</p>
+        <br>
+      <div class="slide"><img src="img/flask.jpg" alt="Data" class="project-img"></div>
+      <br>
+      
+      <p><a href="artefactos/Diagnostico_y_Correccion_de_Bugs_flask.docx" target="_blank">Abrir documentacion y solucion de bugs</a></p>
 
+      
+      <br>
+    </div>
+<!--
     <div class="proyecto">
       <p><strong>3️⃣ Proyecto 3</strong></p>
       <p><strong>Título:</strong> [...]</p>
@@ -37,26 +68,7 @@
       <p><strong>Ejemplo:</strong> [...]</p>
       <p><strong>Impacto:</strong> [...]</p>
     </div>
-
-    <div class="proyecto">
-      <p><strong>4️⃣ Proyecto 4</strong></p>
-      <p><strong>Título:</strong> [...]</p>
-      <p><strong>Contexto:</strong> [...]</p>
-      <p><strong>Stack tecnológico:</strong> [...]</p>
-      <p><strong>Solución:</strong> [...]</p>
-      <p><strong>Ejemplo:</strong> [...]</p>
-      <p><strong>Impacto:</strong> [...]</p>
-    </div>
-
-    <div class="proyecto">
-      <p><strong>5️⃣ Proyecto 5</strong></p>
-      <p><strong>Título:</strong> [...]</p>
-      <p><strong>Contexto:</strong> [...]</p>
-      <p><strong>Stack tecnológico:</strong> [...]</p>
-      <p><strong>Solución:</strong> [...]</p>
-      <p><strong>Ejemplo:</strong> [...]</p>
-      <p><strong>Impacto:</strong> [...]</p>
-    </div>
+    
   </section>
 --> 
   <div class="volver">
